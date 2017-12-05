@@ -23,4 +23,13 @@ public class Item {
         if (sellIn != item.sellIn || quality != item.quality) return false;
         return name.equals(item.name);
     }
+
+    @Override
+    public String toString() {
+        return "Item{" +
+                "name='" + name + '\'' +
+                ", sellIn=" + sellIn +
+                ", quality=" + quality +
+                '}';
+    }
 }
